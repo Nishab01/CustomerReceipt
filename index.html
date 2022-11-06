@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Ready - Receipt</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <section id="title" onclick="window.location='./';">
+        <img src="./logo.png" alt="ClassicReady" height="120px" width="120px">
+        <div>
+            <h1>Classic Ready</h1>
+            <p>Be Classical</p>
+        </div>
+    </section>
+
+    <section id="inp">
+        <form action="./receipt.php" method="GET">
+            <div class="Info">
+                <p>Customer Info</p>
+                <input type="text" name="cName" id="cName" placeholder="Name" required>
+                <div class="box">
+                    <input class="tb1" type="text" name="cPhone" id="cPhone" placeholder="Phone" required>
+                    <input class="tb1" type="text" name="cEmail" id="cEmail" placeholder="E-mail (Optional)">
+                </div>
+            </div>
+
+            <div class="Info">
+                <p>Product(s) Info</p>
+                <div>
+                    <input type="text" name="pName1" id="pName1" placeholder="Product Name 1" required>
+                    <div class="box">
+                        <input class="tb2" type="text" name="pSL1" id="pSL1" placeholder="Serial 1" required>
+                        <input class="tb2" type="number" name="pQn1" id="pQn1" placeholder="Quantity 1" required>
+                        <input class="tb2" type="number" name="pPrice1" id="pPrice1" placeholder="Price 1 (BDT)" required>
+                    </div>
+                </div>
+                <div>
+                    <input type="text" name="pName2" id="pName2" placeholder="Product Name 2">
+                    <div class="box">
+                        <input class="tb2" type="text" name="pSL2" id="pSL2" placeholder="Serial 2">
+                        <input class="tb2" type="number" name="pQn2" id="pQn2" placeholder="Quantity 2">
+                        <input class="tb2" type="number" name="pPrice2" id="pPrice2" placeholder="Price 2 (BDT)">
+                    </div>
+                </div>
+                <div>
+                    <input type="text" name="pName3" id="pName3" placeholder="Product Name 3">
+                    <div class="box">
+                        <input class="tb2" type="text" name="pSL3" id="pSL3" placeholder="Serial 3">
+                        <input class="tb2" type="number" name="pQn3" id="pQn3" placeholder="Quantity 3">
+                        <input class="tb2" type="number" name="pPrice3" id="pPrice3" placeholder="Price 3 (BDT)">
+                    </div>
+                </div>
+                <div>
+                    <input type="text" name="pName4" id="pName4" placeholder="Product Name 4">
+                    <div class="box">
+                        <input class="tb2" type="text" name="pSL4" id="pSL4" placeholder="Serial 4">
+                        <input class="tb2" type="number" name="pQn4" id="pQn4" placeholder="Quantity 4">
+                        <input class="tb2" type="number" name="pPrice4" id="pPrice4" placeholder="Price 4 (BDT)">
+                    </div>
+                </div>
+                <div>
+                    <input type="text" name="pName5" id="pName5" placeholder="Product Name 5">
+                    <div class="box">
+                        <input class="tb2" type="text" name="pSL5" id="pSL5" placeholder="Serial 5">
+                        <input class="tb2" type="number" name="pQn5" id="pQn5" placeholder="Quantity 5">
+                        <input class="tb2" type="number" name="pPrice5" id="pPrice5" placeholder="Price 5 (BDT)">
+                    </div>
+                </div>
+            </div>
+
+            <div class="Info">
+                <p>Other Cost(s)</p>
+                <div class="box">
+                    <input class="tb2" type="number" name="pDelivery" id="pDelivery" placeholder="Delivery Charge (BDT)" required>
+                    <input class="tb2" type="number" name="pOther" id="pOthers" placeholder="Other Charges (BDT)" required>
+                    <input class="tb2" type="number" name="pDiscount" id="pDiscount" placeholder="Overall Discount (BDT)" required>
+                </div>
+            </div>
+
+            <div class="Info">
+                <p>Payment</p>
+                <div class="box">
+                    <input type="number" name="pPaid" id="pPaid" placeholder="Paint Amount (BDT)" required>
+                </div>
+            </div>
+
+            <div class="Info">
+                <input type="submit" name="submit" id="submit" value="Submit">
+            </div>
+        </form>
+    </section>
+</body>
+</html>

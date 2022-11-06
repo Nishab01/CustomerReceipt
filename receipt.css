@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poiret+One&family=Rajdhani:wght@300&display=swap');
+
+html{
+    /* color-scheme: dark light; */
+    scroll-behavior: smooth;
+    background: rgb(255, 255, 255);
+    height: 100vh;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    transition: 250ms ease-in-out;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid rgb(156, 119, 25);
+    background: rgb(13,13,13);
+    background: linear-gradient(180deg, rgba(13,13,13,1) 0%, rgba(48,48,48,1) 100%, rgba(112,112,112,1) 100%);
+    border-radius: 25px;
+    margin: 10px;
+    padding-top: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 5px;
+    box-shadow: 4px 4px 10px black;
+}
+#title h1{
+    font-family: 'Great Vibes';
+    font-size: 40px;
+    color: rgb(230, 184, 69);
+    text-shadow: 3px 3px 3px black;
+    font-weight: 600;
+}
+#title p{
+    padding-left: 3px;
+    font-family: serif;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px black;
+    color: rgb(190, 150, 47);
+    font-weight: 600;
+    font-style: italic;
+}
+
+#main{
+    margin-top: 5px;
+}
+#main table{
+    border: 2px solid black;
+    width: 90vw;
+    border-radius: 5px;
+    margin: 5px;
+}
+#main .tcH{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    width: 80px;
+    font-weight: bold;
+}
+#main .tHead{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+#main .tAm{
+    text-align: right;
+}
+#main .tdTotal{
+    text-align: center;
+}
+#main td{
+    padding-top: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 2px;
+    margin: 0;
+    width: min-content;
+}
+#main .tTotal{
+    border-top: 1px solid black;
+    text-align: center;
+}
+#main .tTotalAm{
+    border-top: 1px solid black;
+    text-align: right;
+}
+#main .tdH{
+    border-bottom: 1px solid black;
+    text-align: center;
+    width: 45vw;
+}
+#main .tdTK{
+    text-align: center;
+    width: 45vw;
+}
+
+#con{
+    width: 90vw;
+}
+#con li{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 10px;
+    width: 85vw;
+    text-align: left;
+    font-size: 12px;
+}
+
+#us{
+    margin: 20px;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid black;
+}
+#us h4{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    padding: 1px;
+}
+#us p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
